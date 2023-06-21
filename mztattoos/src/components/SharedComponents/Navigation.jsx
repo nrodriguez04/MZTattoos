@@ -29,6 +29,9 @@ const Navigation = () => {
   
     return (
       <nav>
+        <div className="logo">
+          <h2>MZ</h2>
+        </div>
         <div onClick={toggleMenu}>
           <motion.div
             animate={isOpen ? "open" : "closed"}
@@ -46,9 +49,9 @@ const Navigation = () => {
   
         {isOpen && (
           <motion.div
-            initial={{ y: '-100vh' }}
-            animate={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 120 }}
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', stiffness: 120 }}
           >
             <ul>
               <li>

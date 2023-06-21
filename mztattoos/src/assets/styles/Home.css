@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800;900&display=swap');
+
   section {
     padding: 2rem;
     text-align: left;
+  }
+
+  .top-span {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+  }
+
+  .fancy-letter {
+    font-family: 'OldeEnglish', sans-serif;
   }
 
   

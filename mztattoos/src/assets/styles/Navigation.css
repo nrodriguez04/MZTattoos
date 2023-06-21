@@ -1,7 +1,8 @@
 nav {
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 20px;
   }
   
   nav > div {
@@ -28,8 +29,22 @@ nav {
   }
   
   nav > div > ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: #333; /* adjust color as needed */
+    color: #fff; /* adjust color as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
     list-style: none;
+    padding: 2rem;
+    transform: translateX(-100%);
+  }
+
+  nav .logo {
+    font-family: 'OldeEnglish', sans-serif;
+    font-size: 30px;
   }
