@@ -68,7 +68,7 @@ const Navigation = () => {
                 exit="closed"
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link to={`/${item.toUpperCase()}`} onClick={toggleMenu}>
+                <Link to={`/${item.toLowerCase()}`} onClick={toggleMenu}>
                   {item}
                 </Link>
               </motion.li>

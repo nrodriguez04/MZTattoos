@@ -90,6 +90,10 @@ const HomePage = () => {
         <p>Clients regularly have questions about their Tattoos or booking an appointment.</p>
         <p>Here are some of the most frequently asked questions. If you have any other questions please feel free to <a>contact me</a>.</p>
         <div className="expandableList">
+        <div>
+          <h4>Questions</h4>
+          <h4>Tap to expand</h4>
+        </div>
         <ExpandableListItem
         question="What is your deposit policy?"
         answer="I require a $150 deposit + tax to make an appointment. This depost is non-refundable, and will be subtracted from the final price of your tattoo."

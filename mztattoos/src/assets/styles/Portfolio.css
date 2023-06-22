@@ -1,0 +1,26 @@
+.portfolio {
+
+  }
+
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .portfolio img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .imageDivider {
+    grid-column: span 2; /* span across 2 columns */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    height: 50px; /* adjust as needed */
+    margin-top: 20px;
+  }
+  

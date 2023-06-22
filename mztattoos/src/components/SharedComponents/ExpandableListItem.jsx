@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+// Style import
+import '../../assets/styles/ExpandableListItem.css'
+
 const ExpandableListItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
