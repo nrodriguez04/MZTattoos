@@ -3,10 +3,15 @@
 import Navigation from '../SharedComponents/Navigation'
 import Header from '../SharedComponents/Header'
 import Carousel from '../SharedComponents/Carousel'
+import ExpandableListItem from '../SharedComponents/ExpandableListItem'
 
 // Style import
 import '../../assets/styles/Home.css'
 import '../../assets/images/carousel/collage1.png'
+
+// Icon imports
+import { FiBookOpen, FiInstagram } from 'react-icons/fi'
+import { MdOutlineMailOutline } from 'react-icons/md'
 
 // Image imports
 import image1 from '../../assets/images/carousel/collage1.png'
@@ -64,7 +69,7 @@ const HomePage = () => {
         <Carousel images={images}/>
       </section>
       <section>
-        <h2><span className="fancy-letter">A</span>bout <span className="fancy-letter">M</span>aks</h2>
+        <h2><span className="fancy-letter">A</span>BOUT <span className="fancy-letter">M</span>AKS</h2>
         <p>Hello, I'm Maks, a passionate tattoo artist with over 10 years of experience in the industry. 
         Currently, you can find me showcasing my skills and creating stunning body art at Atomic Tattoos in Doctor Phillips, FL.</p>
         <p>Tattooing has been my lifelong passion, and I feel privileged to transform people's ideas and stories into beautiful and meaningful artworks on their skin. 
@@ -78,14 +83,37 @@ const HomePage = () => {
          Let's embark on a creative journey together, where your story becomes a timeless work of art.</p>
       </section>
       <section>
-        <h2><span className="fancy-letter">P</span>ortfolio</h2>
+        <h2><span className="fancy-letter">P</span>ORT<span className="fancy-letter">F</span>OLIO</h2>
       </section>
       <section>
-        <h2><span className="fancy-letter">C</span>ontact <span className="fancy-letter">M</span>e</h2>
+        <h1>FA<span className="fancy-letter">Q</span>S</h1>
+        <p>Clients regularly have questions about their Tattoos or booking an appointment.</p>
+        <p>Here are some of the most frequently asked questions. If you have any other questions please feel free to <a>contact me</a>.</p>
+        <div className="expandableList">
+        <ExpandableListItem
+        question="What is your deposit policy?"
+        answer="I require a $150 deposit + tax to make an appointment. This depost is non-refundable, and will be subtracted from the final price of your tattoo."
+        />
+        <ExpandableListItem
+        question="Where are you located?"
+        answer="I am currently working at Atomic Tattoos in Doctor Phillips. Address: A-300, 8972 Turkey Lake Rd suite A-300 suite, Orlando, FL 32819"
+        />
+        <ExpandableListItem
+        question="How do I book an appointment?"
+        answer="For info or appointments, pleaase feel free to reach out to me via email at mzmtatoo7@gmail.com or direct message me on instagram @mzmtattoos_mw with a description of your idea and reference photos if possible."
+        />
+        <ExpandableListItem
+        question="Do you take walk-ins?"
+        answer="Yes. I am currently open and available for walk-ins, but we do have a rotation system in our shop so I am not garunteed to be your artist."
+        />
+        </div>
+      </section>
+      <section>
+        <h2><span className="fancy-letter">C</span>ONT<span className="fancy-letter">A</span>CT</h2>
         <p>You can reach me at...</p>
-        <h4>Email: mzmtatoo7@gmail.com</h4>
-        <h4>Instagram: @mzmtattoos_mw</h4>
-        <h4>Booking: https://booking.mangomint.com/atomictattooscentralflorida/studio203</h4>
+        <h4><MdOutlineMailOutline />: <a href = "mailto: mzmtatoo7@gmail.com">mzmtatoo7@gmail.com</a></h4>
+        <h4><FiInstagram />: <a href="https://www.instagram.com/mzmtattoos_mw/" target='_blank' rel="noopener noreferrer">@mzmtattoos_mw</a></h4>
+        <h4><FiBookOpen />: <a href="https://booking.mangomint.com/atomictattooscentralflorida/studio203" target='_blank' rel="noopener noreferrer">Book Now</a></h4>
       </section>
     </div>
   );
